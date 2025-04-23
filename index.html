@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HardCrime</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 class="logo">HARDCRIME</h1>
+    <nav>
+      <button onclick="navigateTo('projects')">Проекты</button>
+      <button onclick="navigateTo('contacts')">Контакты</button>
+      <button onclick="navigateTo('about')">Обо мне</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="projects" class="content-section active">
+      <h2>ВОСХОЖДЕНИЕ</h2>
+      <p>Проект для тех, кто хочет стать лучше.</p>
+      <a href="https://t.me/+_qjY_Dqsb9E3YTE5" target="_blank" class="btn">Перейти</a>
+    </section>
+
+    <section id="contacts" class="content-section">
+      <h2>Контакты</h2>
+      <p>Telegram: <a href="https://t.me/VestHardov" target="_blank">@VestHardov</a></p>
+    </section>
+
+    <section id="about" class="content-section">
+      <h2>Обо мне</h2>
+      <p>Я — основатель проекта "Восхождение". Моя цель — помогать людям становиться сильнее, умнее и опаснее.</p>
+    </section>
+
+    <section id="roulette" class="content-section">
+      <h2>Колесо фортуны</h2>
+      <div class="roulette">
+        <div class="wheel" id="wheel"></div>
+        <button id="spinButton" class="btn" onclick="spin()">КРУТИТЬ</button>
+        <p id="resultText"></p>
+        <p id="timerText"></p>
+      </div>
+    </section>
+  </main>
+
+  <audio id="clickSound" src="assets/click.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
